@@ -44,7 +44,7 @@
      <module name="org.apache.xerces"/>
      <module name="org.gatein.lib"/>
      <module name="org.apache.commons.io"/>
-     <module name="org.apache.commons-fileupload"/>
+     <module name="org.apache.commons.fileupload"/>
      <module name="org.jaxen"/>
   </dependencies>
 </module>

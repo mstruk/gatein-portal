@@ -115,9 +115,9 @@
       <maven-resource group="bouncycastle" artifact="bcmail-jdk14"/>
       <maven-resource group="bouncycastle" artifact="bcprov-jdk14"/>
       <maven-resource group="com.google.javascript" artifact="closure-compiler"/>
-      <maven-resource group="commons-chain" artifact="commons-chain"/>
+      <!--<maven-resource group="commons-chain" artifact="commons-chain"/>-->
       <!--<maven-resource group="commons-codec" artifact="commons-codec" />-->
-      <maven-resource group="commons-dbcp" artifact="commons-dbcp"/>
+      <!--<maven-resource group="commons-dbcp" artifact="commons-dbcp"/>-->
       <maven-resource group="commons-httpclient" artifact="commons-httpclient"/>
       <maven-resource group="oswego-concurrent" artifact="concurrent"/>
       <maven-resource group="org.ccil.cowan.tagsoup" artifact="tagsoup"/>
@@ -178,7 +178,7 @@
       <maven-resource group="org.codehaus.groovy" artifact="groovy-all"/>
       <maven-resource group="howl" artifact="howl-logger"/>
       <maven-resource group="org.htmlparser" artifact="htmlparser"/>
-      <maven-resource group="org.infinispan" artifact="infinispan-tree"/>
+      <!--<maven-resource group="org.infinispan" artifact="infinispan-tree"/>-->
       <maven-resource group="org.jboss.cache" artifact="jbosscache-core"/>
       <!--maven-resource group="org.jboss.jbossts" artifact="jbossjts" /-->
       <maven-resource group="org.jgroups" artifact="jgroups"/>
@@ -187,22 +187,22 @@
       <maven-resource group="rhino" artifact="js"/>
       <maven-resource group="org.jsecurity" artifact="jsecurity"/>
       <maven-resource group="de.odysseus.juel" artifact="juel-impl"/>
-      <maven-resource group="org.apache.lucene" artifact="lucene-core"/>
-      <maven-resource group="org.apache.lucene" artifact="lucene-memory"/>
-      <maven-resource group="org.apache.lucene" artifact="lucene-spellchecker"/>
+      <!--<maven-resource group="org.apache.lucene" artifact="lucene-core"/>-->
+      <!--<maven-resource group="org.apache.lucene" artifact="lucene-memory"/>-->
+      <!--<maven-resource group="org.apache.lucene" artifact="lucene-spellchecker"/>-->
       <maven-resource group="eu.medsea.mimeutil" artifact="mime-util"/>
       <maven-resource group="org.gatein.mop" artifact="mop-api"/>
       <maven-resource group="org.gatein.mop" artifact="mop-core"/>
       <maven-resource group="org.gatein.mop" artifact="mop-spi"/>
       <maven-resource group="net.oauth.core" artifact="oauth"/>
       <maven-resource group="org.apache.pdfbox" artifact="pdfbox"/>
-      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-api"/>
-      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-cache"/>
-      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-common"/>
-      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-core"/>
-      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-hibernate"/>
-      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-ldap"/>
-      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-spi"/>
+      <!--maven-resource group="org.picketlink.idm" artifact="picketlink-idm-api"/>-->
+      <!--<maven-resource group="org.picketlink.idm" artifact="picketlink-idm-cache"/>-->
+      <!--<maven-resource group="org.picketlink.idm" artifact="picketlink-idm-common"/>-->
+      <!--<maven-resource group="org.picketlink.idm" artifact="picketlink-idm-core"/>-->
+      <!--<maven-resource group="org.picketlink.idm" artifact="picketlink-idm-hibernate"/>-->
+      <!--<maven-resource group="org.picketlink.idm" artifact="picketlink-idm-ldap"/>-->
+      <!--<maven-resource group="org.picketlink.idm" artifact="picketlink-idm-spi"/>-->
       <maven-resource group="org.apache.poi" artifact="poi"/>
       <maven-resource group="org.apache.poi" artifact="poi-ooxml"/>
       <maven-resource group="org.apache.poi" artifact="poi-scratchpad"/>
@@ -270,6 +270,20 @@
       <maven-resource group="org.jasig.cas.client" artifact="cas-client-core"/>
     </module-def>
 
+    <module-def name="org.picketlink.idm">
+      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-api"/>
+      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-cache"/>
+      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-common"/>
+      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-core"/>
+      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-hibernate"/>
+      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-ldap"/>
+      <maven-resource group="org.picketlink.idm" artifact="picketlink-idm-spi"/>
+    </module-def>
+
+    <module-def name="org.infinispan.tree">
+      <maven-resource group="org.infinispan" artifact="infinispan-tree"/>
+    </module-def>
+
     <!-- We need to override old version on AS 7.1.1 with newer version. TODO: remove once support for AS 7.1.1 will be dropped -->
     <module-def name="org.picketlink" slot="gatein">
       <maven-resource group="org.picketlink" artifact="picketlink-core" />
@@ -322,7 +336,21 @@
       <maven-resource group="javax.jcr" artifact="jcr"/>
     </module-def>
 
-    <module-def name="org.apache.commons-fileupload">
+    <module-def name="org.apache.lucene">
+      <maven-resource group="org.apache.lucene" artifact="lucene-core"/>
+      <maven-resource group="org.apache.lucene" artifact="lucene-memory"/>
+      <maven-resource group="org.apache.lucene" artifact="lucene-spellchecker"/>
+    </module-def>
+
+    <module-def name="org.apache.commons.chain">
+      <maven-resource group="commons-chain" artifact="commons-chain"/>
+    </module-def>
+
+    <module-def name="org.apache.commons.dbcp">
+      <maven-resource group="commons-dbcp" artifact="commons-dbcp"/>
+    </module-def>
+
+    <module-def name="org.apache.commons.fileupload">
       <maven-resource group="commons-fileupload" artifact="commons-fileupload"/>
     </module-def>
 

@@ -22,30 +22,8 @@
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
 
-<module xmlns="urn:jboss:module:1.1" name="org.gatein.shindig">
+<module xmlns="urn:jboss:module:1.1" name="org.htmlparser">
   <resources>
     <!-- Insert resources here -->
   </resources>
-
-  <dependencies>
-    <module name="javax.inject.api"/>
-    <module name="javax.servlet.api"/>
-    <module name="javax.api"/>
-    <module name="javax.transaction.api"/>
-    <module name="javax.el.api"/>
-    <module name="org.jdom"/>
-    <module name="org.json"/>
-    <module name="org.joda.time"/>
-    <module name="org.slf4j"/>
-    <module name="com.google.guava" slot="gatein"/>
-    <module name="org.apache.commons.lang"/>
-    <module name="org.apache.commons.codec"/>
-    <module name="org.apache.httpcomponents"/>
-    <module name="org.apache.xerces"/>
-    <module name="org.apache.sanselan"/>
-    <module name="org.apache.commons.io"/>
-    <module name="org.apache.commons.fileupload"/>
-    <module name="org.jaxen"/>
-    <module name="org.gatein.lib"/>
-  </dependencies>
 </module>

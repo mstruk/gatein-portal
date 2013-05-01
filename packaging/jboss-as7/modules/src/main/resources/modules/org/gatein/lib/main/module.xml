@@ -31,7 +31,6 @@
     <module name="javax.api"/>
     <module name="org.apache.xerces" services="export" export="true"/>
     <module name="javax.xml.bind.api"/>
-
     <module name="javax.jcr.api"/>
     <module name="javax.portlet.api" export="true"/>
     <module name="javax.servlet.api"/>
@@ -54,6 +53,12 @@
     <module name="org.apache.commons.pool"/>
     <module name="org.apache.httpcomponents"/>
     <module name="org.apache.lucene"/>
+    <module name="org.apache.poi"/>
+    <module name="org.apache.pdfbox"/>
+    <module name="org.apache.sanselan"/>
+    <module name="org.apache.tika"/>
+    <module name="org.apache.ws.commons"/>
+    <module name="org.bouncycastle"/>
     <module name="org.chromattic" services="export" export="true"/>
     <module name="org.gatein.common"/>
     <module name="org.gatein.naming" export="true"/>
@@ -65,15 +70,21 @@
     <module name="org.json" export="true"/>
     <module name="org.slf4j"/>
     <module name="org.staxnav"/>
+    <module name="org.jibx"/>
     <module name="org.jboss.as.web"/>
     <module name="org.jboss.common-core"/>
     <module name="org.jboss.logging"/>
     <module name="org.jboss.jts"/>
+    <module name="org.jboss.cache" export="true"/>
+    <module name="org.jgroups" slot="gatein"/>
     <module name="com.h2database.h2"/>
     <module name="org.picocontainer"/>
     <module name="org.picketlink.idm" export="true"/>
     <module name="com.google.guava" slot="gatein" export="true"/>
     <module name="org.gatein.wsrp.integration" export="true" optional="true"/>
+    <module name="edu.oswego.concurrent"/>
+    <module name="org.mozilla.javascript"/>
+    <module name="org.htmlparser"/>
 
     <system export="true">
       <paths>

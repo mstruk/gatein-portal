@@ -79,7 +79,7 @@
     <module name="org.jgroups" slot="gatein"/>
     <module name="com.h2database.h2"/>
     <module name="org.picocontainer"/>
-    <module name="org.picketlink.idm" export="true"/>
+    <module name="org.picketlink.idm"/>
     <module name="com.google.guava" slot="gatein" export="true"/>
     <module name="org.gatein.wsrp.integration" export="true" optional="true"/>
     <module name="edu.oswego.concurrent"/>

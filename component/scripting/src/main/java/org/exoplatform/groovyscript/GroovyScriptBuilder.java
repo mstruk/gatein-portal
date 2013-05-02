@@ -202,7 +202,9 @@ public class GroovyScriptBuilder {
             }
         });
 
-        return new DelegatingClassLoader(tccl, GroovyClassLoader.class.getClassLoader());
+        return new DelegatingClassLoader(tccl,
+            GroovyClassLoader.class.getClassLoader(),
+            javax.portlet.PortletConfig.class.getClassLoader());
     }
 
     /**

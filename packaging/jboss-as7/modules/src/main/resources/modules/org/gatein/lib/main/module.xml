@@ -81,6 +81,8 @@
     <module name="org.picocontainer"/>
     <module name="org.picketlink.idm"/>
     <module name="com.google.guava" slot="gatein" export="true"/>
+    <module name="com.google.javascript"/>
+    <module name="org.codehaus.groovy"/>
     <module name="org.gatein.wsrp.integration" export="true" optional="true"/>
     <module name="edu.oswego.concurrent"/>
     <module name="org.mozilla.javascript"/>

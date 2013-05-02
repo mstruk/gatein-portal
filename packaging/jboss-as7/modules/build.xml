@@ -94,6 +94,42 @@
        -->
     </module-def>
 
+    <module-def name="com.thoughtworks.xstream">
+      <maven-resource group="com.thoughtworks.xstream" artifact="xstream"/>
+    </module-def>
+
+    <module-def name="org.apache.xmlbeans">
+      <maven-resource group="org.apache.xmlbeans" artifact="xmlbeans"/>
+    </module-def>
+
+    <module-def name="org.enhydra.xapool">
+      <maven-resource group="com.experlog" artifact="xapool"/>
+    </module-def>
+
+    <module-def name="org.mozilla.universalchardet">
+      <maven-resource group="com.googlecode.juniversalchardet" artifact="juniversalchardet"/>
+    </module-def>
+
+    <module-def name="org.objectweb.howl">
+      <maven-resource group="howl" artifact="howl-logger"/>
+    </module-def>
+
+    <module-def name="de.odysseus.juel">
+      <maven-resource group="de.odysseus.juel" artifact="juel-impl"/>
+    </module-def>
+
+    <module-def name="eu.medsea.mimeutil">
+      <maven-resource group="eu.medsea.mimeutil" artifact="mime-util"/>
+    </module-def>
+
+    <module-def name="net.oauth.core">
+      <maven-resource group="net.oauth.core" artifact="oauth"/>
+    </module-def>
+
+    <module-def name="com.jhlabs.filters">
+      <maven-resource group="com.jhlabs" artifact="filters"/>
+    </module-def>
+
     <module-def name="com.google.javascript">
       <maven-resource group="com.google.javascript" artifact="closure-compiler"/>
     </module-def>
@@ -220,26 +256,19 @@
       <maven-resource group="org.exoplatform.ws" artifact="exo.ws.frameworks.servlet"/>
       <maven-resource group="org.exoplatform.ws" artifact="exo.ws.rest.core"/>
       <maven-resource group="org.exoplatform.ws" artifact="exo.ws.rest.ext"/>
-      <!--maven-resource group="com.jhlabs" artifact="filters"/-->
       <maven-resource group="org.gatein.api" artifact="gatein-api" />
       <maven-resource group="org.gatein.management" artifact="gatein-management-api"/>
       <maven-resource group="org.gatein.management" artifact="gatein-management-spi"/>
       <maven-resource group="org.gatein.management" artifact="gatein-management-core"/>
       <maven-resource group="org.gatein.management" artifact="gatein-management-rest"/>
       <maven-resource group="org.gatein.web" artifact="redirect"/>
-      <!--maven-resource group="howl" artifact="howl-logger"/-->
-      <maven-resource group="de.odysseus.juel" artifact="juel-impl"/>
-      <maven-resource group="eu.medsea.mimeutil" artifact="mime-util"/>
       <maven-resource group="org.gatein.mop" artifact="mop-api"/>
       <maven-resource group="org.gatein.mop" artifact="mop-core"/>
       <maven-resource group="org.gatein.mop" artifact="mop-spi"/>
-      <maven-resource group="net.oauth.core" artifact="oauth"/>
       <maven-resource group="org.gatein.captcha" artifact="simplecaptcha"/>
-      <maven-resource group="com.googlecode.juniversalchardet" artifact="juniversalchardet"/>
-      <maven-resource group="com.experlog" artifact="xapool"/>
-      <maven-resource group="org.apache.xmlbeans" artifact="xmlbeans"/>
-      <maven-resource group="com.thoughtworks.xstream" artifact="xstream"/>
       <maven-resource group="org.gatein.cdi" artifact="gatein-cdi-injection"/>
+
+
 
       <!-- modules that were used by shindig, commented out for reference -->
       <!--

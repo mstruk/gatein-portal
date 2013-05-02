@@ -1,0 +1,19 @@
+<jboss-deployment-structure>
+  <!-- Make sub deployments isolated by default, so they cannot see each others classes without a Class-Path entry -->
+  <ear-subdeployments-isolated>true</ear-subdeployments-isolated>
+
+  <sub-deployment name="wsrp-admin-gui.war" >
+    <dependencies>
+      <!-- Adds a dependency on guava -->
+      <module name="com.google.guava" slot="gatein" />
+    </dependencies>
+  </sub-deployment>
+
+  <sub-deployment name="wsrp-producer.war" >
+    <dependencies>
+      <!-- Adds a dependency on guava -->
+      <module name="com.google.guava" slot="gatein" />
+    </dependencies>
+  </sub-deployment>
+
+</jboss-deployment-structure>

@@ -22,7 +22,6 @@
 package org.gatein.integration.jboss.as7.web;
 
 import org.exoplatform.container.RootContainer;
-import org.gatein.version.Version;
 import org.jboss.logging.Logger;
 import org.jboss.modules.Module;
 import org.jboss.msc.service.Service;
@@ -40,22 +39,8 @@ public class StartupService implements Service<StartupService> {
 
     @Override
     public void start(StartContext context) throws StartException {
-        ClassLoader oldCl = Thread.currentThread().getContextClassLoader();
-        try {
-            // set TCCL to this module's CL
-            Thread.currentThread().setContextClassLoader(module.getClassLoader());
-
-            // Trigger startup
-            RootContainer rootContainer = RootContainer.getInstance();
-            rootContainer.createPortalContainers();
-        } finally {
-            if (Thread.currentThread().getContextClassLoader() != oldCl) {
-                Thread.currentThread().setContextClassLoader(oldCl);
-            }
-
-            // Startup message
-            log.info(Version.prettyVersion + " started.");
-        }
+        // Trigger startup
+        RootContainer.getInstance().createPortalContainers();
     }
 
     @Override

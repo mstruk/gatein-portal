@@ -11,6 +11,9 @@
       <module name="org.hibernate"/>
       <module name="org.gatein.wsrp"/>
       <module name="org.gatein.sso"/>
+
+      <!-- chromattic uses ServiceLoader to initialize itself -->
+      <module name="org.chromattic" services="export"/>
     </dependencies>
   </sub-deployment>
 

@@ -76,7 +76,7 @@
     <module name="org.apache.ws.commons"/>
     <module name="org.apache.xmlbeans"/>
     <module name="org.bouncycastle"/>
-    <module name="org.chromattic" services="export" export="true"/>
+    <module name="org.chromattic"/>
     <module name="org.codehaus.groovy"/>
     <module name="org.enhydra.xapool"/>
     <module name="org.gatein.common"/>

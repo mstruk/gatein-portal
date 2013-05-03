@@ -9,7 +9,6 @@
       <!-- org.gatein.pc requires Xerces on TCCL -->
       <module name="org.apache.xerces" services="export"/>
 
-      <module name="org.hibernate"/>
       <module name="org.gatein.sso"/>
 
       <!-- org.picketlink.idm uses JAXB which uses TCCL to load classes packaged locally in org.picketlink.idm -->

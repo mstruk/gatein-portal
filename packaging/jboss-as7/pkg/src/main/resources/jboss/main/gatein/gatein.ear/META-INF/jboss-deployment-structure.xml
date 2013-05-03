@@ -1,30 +1,45 @@
 <jboss-deployment-structure>
-  <!-- Make gatein.ear sub-deployments non-isolated -->
+  <!--
+       Make gatein.ear sub-deployments non-isolated
+  -->
   <ear-subdeployments-isolated>false</ear-subdeployments-isolated>
 
   <sub-deployment name="portal.war" >
     <dependencies>
       <module name="org.gatein.common"/>
+      <module name="org.gatein.sso"/>
       <module name="org.gatein.pc"/>
-      <!-- org.gatein.pc requires Xerces on TCCL -->
+
+      <!--
+           org.gatein.pc requires Xerces on TCCL
+      -->
       <module name="org.apache.xerces" services="export"/>
 
-      <module name="org.gatein.sso"/>
-
-      <!-- org.picketlink.idm uses JAXB which uses TCCL to load classes packaged locally in org.picketlink.idm -->
+      <!--
+           org.picketlink.idm uses JAXB which uses TCCL
+           to load classes packaged locally in org.picketlink.idm
+      -->
       <module name="org.picketlink.idm"/>
 
-      <!-- WSRP configuration is loaded via TCCL -->
+      <!--
+           WSRP configuration is loaded via TCCL
+      -->
       <module name="org.gatein.wsrp"/>
       <module name="org.gatein.wsrp.integration"/>
 
-      <!-- Chromattic uses ServiceLoader (TCCL) to initialize itself -->
+      <!--
+           Chromattic uses ServiceLoader (TCCL) to initialize itself
+      -->
       <module name="org.chromattic" services="export"/>
 
-      <!-- JBossCache configuration loads schemas via TCCL -->
+      <!--
+           JBossCache configuration loads schemas via TCCL
+      -->
       <module name="org.jboss.cache"/>
 
-      <!-- Groovy loads types referenced in .gtmpl files via TCCL -->
+      <!--
+           Groovy loads types referenced in .gtmpl files via TCCL
+      -->
       <module name="org.json"/>
     </dependencies>
   </sub-deployment>
@@ -39,7 +54,9 @@
     <dependencies>
       <module name="org.gatein.common"/>
 
-      <!-- Groovy loads types referenced in .gtmpl files via TCCL -->
+      <!--
+           Groovy loads types referenced in .gtmpl files via TCCL
+      -->
       <module name="org.json"/>
     </dependencies>
   </sub-deployment>
@@ -54,7 +71,9 @@
     <dependencies>
       <module name="org.gatein.common"/>
 
-      <!-- Groovy loads types referenced in .gtmpl files via TCCL -->
+      <!--
+           Groovy loads types referenced in .gtmpl files via TCCL
+      -->
       <module name="org.json"/>
     </dependencies>
   </sub-deployment>

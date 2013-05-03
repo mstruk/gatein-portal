@@ -12,11 +12,14 @@
       <module name="org.hibernate"/>
       <module name="org.gatein.sso"/>
 
+      <!-- org.picketlink.idm uses JAXB which uses TCCL to load classes packaged locally in org.picketlink.idm -->
+      <module name="org.picketlink.idm"/>
+
       <!-- WSRP configuration is loaded via TCCL -->
       <module name="org.gatein.wsrp"/>
       <module name="org.gatein.wsrp.integration"/>
 
-      <!-- Chromattic uses ServiceLoader to initialize itself -->
+      <!-- Chromattic uses ServiceLoader (TCCL) to initialize itself -->
       <module name="org.chromattic" services="export"/>
 
       <!-- JBossCache configuration loads schemas via TCCL -->

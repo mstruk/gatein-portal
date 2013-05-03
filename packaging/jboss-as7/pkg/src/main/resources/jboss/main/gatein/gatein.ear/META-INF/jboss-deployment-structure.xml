@@ -12,12 +12,15 @@
       <module name="org.hibernate"/>
       <module name="org.gatein.sso"/>
 
-      <!-- wsrp configuration is loaded via TCCL -->
+      <!-- WSRP configuration is loaded via TCCL -->
       <module name="org.gatein.wsrp"/>
       <module name="org.gatein.wsrp.integration"/>
 
-      <!-- chromattic uses ServiceLoader to initialize itself -->
+      <!-- Chromattic uses ServiceLoader to initialize itself -->
       <module name="org.chromattic" services="export"/>
+
+      <!-- Groovy loads types referenced in .gtmpl files via TCCL -->
+      <module name="org.json"/>
     </dependencies>
   </sub-deployment>
 
@@ -30,6 +33,9 @@
   <sub-deployment name="exoadmin.war" >
     <dependencies>
       <module name="org.gatein.common"/>
+
+      <!-- Groovy loads types referenced in .gtmpl files via TCCL -->
+      <module name="org.json"/>
     </dependencies>
   </sub-deployment>
 
@@ -42,6 +48,9 @@
   <sub-deployment name="dashboard.war">
     <dependencies>
       <module name="org.gatein.common"/>
+
+      <!-- Groovy loads types referenced in .gtmpl files via TCCL -->
+      <module name="org.json"/>
     </dependencies>
   </sub-deployment>
 

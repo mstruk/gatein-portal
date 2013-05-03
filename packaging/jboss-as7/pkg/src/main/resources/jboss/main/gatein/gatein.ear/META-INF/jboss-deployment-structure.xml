@@ -8,9 +8,13 @@
       <module name="org.gatein.pc"/>
       <!-- org.gatein.pc requires Xerces on TCCL -->
       <module name="org.apache.xerces" services="export"/>
+
       <module name="org.hibernate"/>
-      <module name="org.gatein.wsrp"/>
       <module name="org.gatein.sso"/>
+
+      <!-- wsrp configuration is loaded via TCCL -->
+      <module name="org.gatein.wsrp"/>
+      <module name="org.gatein.wsrp.integration"/>
 
       <!-- chromattic uses ServiceLoader to initialize itself -->
       <module name="org.chromattic" services="export"/>

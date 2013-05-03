@@ -83,7 +83,7 @@
     <module name="org.gatein.pc"/>
     <module name="org.gatein.shindig"/>
     <module name="org.gatein.wci" export="true"/>
-    <module name="org.gatein.wsrp.integration" export="true" optional="true"/>
+    <module name="org.gatein.wsrp.integration"/>
     <module name="org.hibernate"/>
     <module name="org.htmlparser"/>
     <module name="org.infinispan"/>

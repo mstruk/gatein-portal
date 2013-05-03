@@ -92,7 +92,7 @@
     <module name="org.jboss.common-core"/>
     <module name="org.jboss.logging"/>
     <module name="org.jboss.jts"/>
-    <module name="org.jboss.cache" export="true"/>
+    <module name="org.jboss.cache"/>
     <module name="org.jgroups" slot="gatein"/>
     <module name="org.mozilla.javascript"/>
     <module name="org.mozilla.universalchardet"/>

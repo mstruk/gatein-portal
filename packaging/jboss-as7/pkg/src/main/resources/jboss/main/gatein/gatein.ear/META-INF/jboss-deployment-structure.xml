@@ -1,5 +1,5 @@
 <jboss-deployment-structure>
-  <!-- Make sub deployments isolated by default, so they cannot see each others classes without a Class-Path entry -->
+  <!-- Make gatein.ear sub-deployments non-isolated -->
   <ear-subdeployments-isolated>false</ear-subdeployments-isolated>
 
   <sub-deployment name="portal.war" >
@@ -18,6 +18,9 @@
 
       <!-- Chromattic uses ServiceLoader to initialize itself -->
       <module name="org.chromattic" services="export"/>
+
+      <!-- JBossCache configuration loads schemas via TCCL -->
+      <module name="org.jboss.cache"/>
 
       <!-- Groovy loads types referenced in .gtmpl files via TCCL -->
       <module name="org.json"/>

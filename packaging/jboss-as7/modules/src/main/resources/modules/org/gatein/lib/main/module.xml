@@ -106,7 +106,6 @@
       <paths>
         <!-- exo.portal.gadgets-core has dependency on sun.misc.BASE64Encoder -->
         <path name="sun/misc"/>
-        <!--path name="com/sun/xml/internal/stream"/-->
       </paths>
     </system>
 

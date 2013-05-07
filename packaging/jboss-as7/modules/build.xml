@@ -200,6 +200,10 @@
       <maven-resource group="org.gatein.portal" artifact="jboss-as7-integration-extension"/>
     </module-def>
 
+    <module-def name="org.gatein.portal-dependencies"/>
+
+    <module-def name="org.gatein.portal-dependencies-basic"/>
+
     <module-def name="org.gatein.cdi-portlet-integration">
       <maven-resource group="org.gatein" artifact="cdi-portlet-integration"/>
     </module-def>

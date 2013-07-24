@@ -715,7 +715,9 @@ public class UIPortletActionListener {
             UIPageBody uiPageBody = uiPortlet.getAncestorOfType(UIPageBody.class);
             UIPage uiPage = uiPortlet.getAncestorOfType(UIPage.class);
             if (windowState.equals(WindowState.MAXIMIZED.toString())) {
-                uiPage.normalizePortletWindowStates();
+                if(uiPage != null) {
+                    uiPage.normalizePortletWindowStates();
+                }
                 if (uiPageBody != null) {
                     uiPortlet.setCurrentWindowState(WindowState.MAXIMIZED);
                     // TODO dang.tung: we have to set maximized portlet for page because in ShowMaxWindow case the PageBody

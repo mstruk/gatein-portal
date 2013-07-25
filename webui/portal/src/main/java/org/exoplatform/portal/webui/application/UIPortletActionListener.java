@@ -263,6 +263,10 @@ public class UIPortletActionListener {
                 if (uiPage != null) {
                     uiPage.normalizePortletWindowStates();
                     uiPage.setMaximizedUIPortlet(uiPortlet);
+                    UIPageBody pageBody = uiPage.getAncestorOfType(UIPageBody.class);
+                    if (pageBody != null) {
+                        pageBody.setMaximizedUIComponent(uiPortlet);
+                    }
                     uiPortlet.setCurrentWindowState(WindowState.MAXIMIZED);
                 }
             } else if (WindowState.MINIMIZED.equals(state)) {
@@ -270,6 +274,10 @@ public class UIPortletActionListener {
                 if (uiPage != null) {
                     if(uiPage.getMaximizedUIPortlet() != null && uiPage.getMaximizedUIPortlet().getId().equals(uiPortlet.getId())) {
                         uiPage.setMaximizedUIPortlet(null);
+                        UIPageBody pageBody = uiPage.getAncestorOfType(UIPageBody.class);
+                        if (pageBody != null) {
+                            pageBody.setMaximizedUIComponent(null);
+                        }
                     }
                 }
             } else {
@@ -277,6 +285,10 @@ public class UIPortletActionListener {
                 if (uiPage != null) {
                     if(uiPage.getMaximizedUIPortlet() != null && uiPage.getMaximizedUIPortlet().getId().equals(uiPortlet.getId())) {
                         uiPage.setMaximizedUIPortlet(null);
+                        UIPageBody pageBody = uiPage.getAncestorOfType(UIPageBody.class);
+                        if (pageBody != null) {
+                            pageBody.setMaximizedUIComponent(null);
+                        }
                     }
                 }
             }

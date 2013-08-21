@@ -104,6 +104,13 @@ public class JavascriptConfigDeployer implements WebAppListener {
 
     private void remove(WebApp webApp) {
         javascriptService.unregisterServletContext(webApp);
+        try {
+            JavascriptConfigParser.unregisterResources(javascriptService, webApp.getServletContext());
+        } catch (Exception ex) {
+            LOG.error(
+                "An error occured while removing script resources for the context '"
+                    + webApp.getServletContext().getServletContextName() + "'", ex);
+        }
     }
 
     private void register(ServletContext scontext, PortalContainer container) {
